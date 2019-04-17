@@ -16,6 +16,11 @@ public abstract class Printer {
 		this.brand = brand;
 	}
 	
+	@Override
+	public String toString() {
+		return "Printer [brand=" + brand + "]";
+	}
+
 	public abstract void print();
 }
 
@@ -28,7 +33,7 @@ class ColorPrinter extends Printer{
 	}
 	
 	public void print() {
-		System.out.println("彩色打印...");
+		System.out.println("父类方法重写：彩色打印...");
 	}
 }	
 
@@ -40,11 +45,11 @@ class BlackPrinter extends Printer{
 	}
 	
 	public void print() {
-		System.out.println("黑白打印...");
+		System.out.println("父类方法重写：黑白打印...");
 	}
 	
 	public void showPrint(){
-		System.out.println("这是黑白打印机....");
+		System.out.println("子类独有方法：这是黑白打印机....");
 	}
 }
 

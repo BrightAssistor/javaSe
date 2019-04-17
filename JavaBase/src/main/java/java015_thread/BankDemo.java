@@ -7,7 +7,7 @@ public class BankDemo {
 		Bank bank = new Bank();
 		BankThread thread1 = new BankThread(bank, "ATM");
 		BankThread thread2 = new BankThread(bank, "柜台");
-		
+		Thread thread = new Thread();
 		thread1.start();
 		thread2.start();
 		

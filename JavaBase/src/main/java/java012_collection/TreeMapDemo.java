@@ -22,7 +22,7 @@ public class TreeMapDemo {
 	}
 }
 
-class Person /*implements Comparable<Person>*/{
+class Person implements Comparable<Person>{
 	private String name;
 	private int age;
 	
@@ -35,17 +35,17 @@ class Person /*implements Comparable<Person>*/{
 	public String toString() {
 		return "Person [name=" + name + ", age=" + age + "]";
 	}
-//	@Override
-//	public int compareTo(Person o) {
-//		// TODO Auto-generated method stub
-//		if (this.name.compareTo(o.name) > 0) {
-//			return 1;
-//		}else if(this.name.compareTo(o.name) < 0){
-//			return -1;
-//		}else {
-//			return this.age - o.age;
-//		}
-//	}
+	@Override
+	public int compareTo(Person o) {
+		// TODO Auto-generated method stub
+		if (this.name.compareTo(o.name) > 0) {
+			return 1;
+		}else if(this.name.compareTo(o.name) < 0){
+			return -1;
+		}else {
+			return this.age - o.age;
+		}
+	}
 	
 }
 
