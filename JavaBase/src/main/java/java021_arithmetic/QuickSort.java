@@ -21,14 +21,17 @@ public class QuickSort {
 	}
 	private void quick_do(int[] arr,int low,int high){
 		if (low<high) {
-			
 			int middle = getMiddle(arr, low, high);
+			for (int i : arr) {
+				System.out.print(i+"\t");
+			}
+			System.out.println("***high="+high+",low="+low+",middle="+middle);
 			quick_do(arr, low, middle-1);
 			quick_do(arr, middle+1, high);
 		}
 	}
 	public void quick(int[] arr) {
-		if (arr.length>0) {
+		if (arr.length>1) {
 			quick_do(arr, 0, arr.length-1);
 		}
 	}

@@ -15,7 +15,6 @@ public class AdapterDefaltDemo extends DefaltAdapter{
 	@Override
 	public void sampleOperation3() {
 		// TODO Auto-generated method stub
-		
 	}
 
 }

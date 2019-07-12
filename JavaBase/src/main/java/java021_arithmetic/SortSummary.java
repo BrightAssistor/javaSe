@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class SortSummary {
 	public static void main(String[] args) {
-		int[]array={45,87,1,4,98,23,56};
+		int[]array={99,45,87,1,4,98,23,56};
 		//排序第一种方法：自带
 //		Arrays.sort(array);
 //		for (int i : array) {
@@ -57,6 +57,10 @@ public class SortSummary {
 //		}
 		
 		//排序第五种：快速排序
+		 	for (int i : array) {
+				System.out.print(i+"\t");
+			}
+		 	System.out.println("***********初始************");
 	        new QuickSort().quick(array);//别忘记arr.length-1
 	        for (int i : array) {
 				System.out.print(i+"\t");

@@ -1,6 +1,7 @@
 package java012_collection;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 
 public class HashSetDemo {
 	public static void main(String[] args) {
@@ -10,6 +11,8 @@ public class HashSetDemo {
 		hashSet.add("july");
 		hashSet.add("jun");
 		System.out.println(hashSet.add("jack"));
+		System.out.println(hashSet.add(null));
+		System.out.println(hashSet.add(null));
 		System.out.println(hashSet.size());
 		
 		HashSet<Dog> hashSet2 = new HashSet<Dog>();
@@ -22,6 +25,10 @@ public class HashSetDemo {
 		System.out.println(hashSet2.size());
 		hashSet2.remove(new Dog("4325g", 10));
 		System.out.println(hashSet2.size());
+		LinkedHashSet<String> linkedHashSet = new LinkedHashSet<String>();
+		linkedHashSet.add("jack");
+		linkedHashSet.add("jim");
+		System.out.println(linkedHashSet);
 	}
 }
 
