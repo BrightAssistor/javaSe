@@ -21,7 +21,7 @@ public class HttpClient {
 		CloseableHttpResponse response = null;
 		String result = null;
 		try {
-			String readFile = FileUtils.readFile(fileName,"uft-8");
+			String readFile = FileUtils.readFile(fileName,"utf-8");
 			httpPost.setHeader("Content-Type","application/json,charset=utf8");
 			StringEntity stringEntity = new StringEntity(readFile,"UTF-8");
 			httpPost.setEntity(stringEntity);
